@@ -1,12 +1,12 @@
 /**
  * Created by hoho on 2018. 7. 25..
  */
-import OvenTemplate from "view/engine/OvenTemplate";
-import {naturalHms} from "utils/strings";
+import OvenTemplate from "../../engine/OvenTemplate";
+import {naturalHms} from "../../../utils/strings";
 import {
     CONTENT_TIME,
     CONTENT_TIME_MODE_CHANGED
-} from "api/constants";
+} from "../../../api/constants";
 
 const TimeDisplay = function($container, api, data){
 

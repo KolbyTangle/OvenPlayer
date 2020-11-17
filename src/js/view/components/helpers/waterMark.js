@@ -1,13 +1,13 @@
 /**
  * Created by Sangwon Oh on 2020. 11. 10..
  */
-import OvenTemplate from 'view/engine/OvenTemplate';
+import OvenTemplate from '../../engine/OvenTemplate';
 import {
     STATE_IDLE,
     STATE_PLAYING,
     STATE_COMPLETE,
     STATE_PAUSED
-} from "api/constants";
+} from "../../../api/constants";
 
 const WaterMark = function($container, api, playerState){
 

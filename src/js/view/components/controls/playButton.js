@@ -1,7 +1,7 @@
 /**
  * Created by hoho on 2018. 7. 24..
  */
-import OvenTemplate from "view/engine/OvenTemplate";
+import OvenTemplate from "../../engine/OvenTemplate";
 import {
     ERROR,
     STATE_IDLE,
@@ -16,7 +16,7 @@ import {
     STATE_AD_PLAYING,
     STATE_AD_PAUSED,
     STATE_AD_COMPLETE,
-} from "api/constants";
+} from "../../../api/constants";
 
 const PlayButton = function ($container, api) {
     let $iconPlay = "",

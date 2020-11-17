@@ -1,11 +1,11 @@
 /**
  * Created by hoho on 2018. 6. 11..
  */
-import Provider from "api/provider/html5/Provider";
-import WebRTCLoader from "api/provider/html5/providers/WebRTCLoader";
-import {isWebRTC} from "utils/validator";
-import {errorTrigger} from "api/provider/utils";
-import {PROVIDER_WEBRTC, STATE_IDLE, CONTENT_META, STATE_PLAYING} from "api/constants";
+import Provider from "../Provider";
+import WebRTCLoader from "./WebRTCLoader";
+import {isWebRTC} from "../../../../utils/validator";
+import {errorTrigger} from "../../utils";
+import {PROVIDER_WEBRTC, STATE_IDLE, CONTENT_META, STATE_PLAYING} from "../../../constants";
 
 /**
  * @brief   webrtc provider extended core.

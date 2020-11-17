@@ -1,8 +1,8 @@
 /**
  * Created by hoho on 2018. 11. 12..
  */
-import {ERROR, STATE_ERROR} from "api/constants";
-import _ from "utils/underscore";
+import {ERROR, STATE_ERROR} from "../constants";
+import _ from "../../utils/underscore";
 
 export const extractVideoElement = function(elementOrMse) {
     if(_.isElement(elementOrMse)){

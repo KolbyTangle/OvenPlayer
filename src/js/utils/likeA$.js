@@ -1,7 +1,7 @@
 /**
  * Created by hoho on 2018. 7. 23..
  */
-import _ from "utils/underscore";
+import _ from "./underscore";
 
 /**
  * @brief   It was replace jquery's selector. It Often used by OvenTemplate. (/view/engine/OvenTemplate.js)

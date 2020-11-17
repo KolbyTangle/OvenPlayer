@@ -3,11 +3,11 @@
  * @param   {element}   container   dom element
  *
  * */
-import {getBrowser} from "utils/browser";
-import {PROVIDER_DASH, PROVIDER_HLS, PROVIDER_WEBRTC, PROVIDER_HTML5, PROVIDER_RTMP} from "api/constants";
-import LA$ from "utils/likeA$.js";
-import {getScriptPath} from 'utils/webpack';
-import {version} from 'version';
+import {getBrowser} from "../../utils/browser";
+import {PROVIDER_DASH, PROVIDER_HLS, PROVIDER_WEBRTC, PROVIDER_HTML5, PROVIDER_RTMP} from "../constants";
+import LA$ from "../../utils/likeA$.js";
+import {getScriptPath} from '../../utils/webpack';
+import {version} from '../../version';
 //ToDo : Restructuring
 
 const Manager = function(container, browserInfo){

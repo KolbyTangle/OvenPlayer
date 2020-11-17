@@ -1,9 +1,9 @@
 /**
  * Created by hoho on 2018. 8. 24..
  */
-import Provider from "api/provider/html5/Provider";
-import {errorTrigger} from "api/provider/utils";
-import {PROVIDER_HTML5, STATE_IDLE} from "api/constants";
+import Provider from "../Provider";
+import {errorTrigger} from "../../utils";
+import {PROVIDER_HTML5, STATE_IDLE} from "../../../constants";
 
 /**
  * @brief   html5 provider extended core.

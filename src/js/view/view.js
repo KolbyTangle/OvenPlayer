@@ -1,12 +1,12 @@
 /**
  * Created by hoho on 2018. 7. 20..
  */
-import OvenTemplate from 'view/engine/OvenTemplate';
-import Helpers from 'view/components/helpers/main';
-import Controls from 'view/components/controls/main';
-import PanelManager from "view/global/PanelManager";
-import ContextPanel from 'view/components/helpers/contextPanel';
-import LA$ from 'utils/likeA$';
+import OvenTemplate from './engine/OvenTemplate';
+import Helpers from './components/helpers/main';
+import Controls from './components/controls/main';
+import PanelManager from "./global/PanelManager";
+import ContextPanel from './components/helpers/contextPanel';
+import LA$ from '../utils/likeA$';
 import {
     READY,
     DESTROY,
@@ -24,7 +24,7 @@ import {
     PLAYER_STATE,
     PLAYER_CLICKED,
     ERROR
-} from "api/constants";
+} from "../api/constants";
 import ResizeSensor from "resize-sensor";
 
 require('../../stylesheet/ovenplayer.less');

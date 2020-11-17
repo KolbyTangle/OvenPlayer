@@ -1,15 +1,15 @@
 /**
  * Created by hoho on 2018. 7. 24..
  */
-import OvenTemplate from "view/engine/OvenTemplate";
-import PanelManager from "view/global/PanelManager";
-import {naturalHms} from "utils/strings"
-import LA$ from "utils/likeA$";
+import OvenTemplate from "../../engine/OvenTemplate";
+import PanelManager from "../../global/PanelManager";
+import {naturalHms} from "../../../utils/strings"
+import LA$ from "../../../utils/likeA$";
 import {
     CONTENT_TIME,
     CONTENT_BUFFER,
     AD_TIME
-} from "api/constants";
+} from "../../../api/constants";
 import {STATE_COMPLETE} from "../../../api/constants";
 //import ResizeSensor from "resize-sensor";
 

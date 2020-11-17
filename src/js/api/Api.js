@@ -1,16 +1,16 @@
-import CaptionManager from "api/caption/Manager";
-import Configurator from "api/Configurator";
-import EventEmitter from "api/EventEmitter";
-import LazyCommandExecutor from "api/LazyCommandExecutor";
-import MediaManager from "api/media/Manager";
-import PlaylistManager from "api/playlist/Manager";
-import ProviderController from "api/provider/Controller";
+import CaptionManager from "./caption/Manager";
+import Configurator from "./Configurator";
+import EventEmitter from "./EventEmitter";
+import LazyCommandExecutor from "./LazyCommandExecutor";
+import MediaManager from "./media/Manager";
+import PlaylistManager from "./playlist/Manager";
+import ProviderController from "./provider/Controller";
 import {READY, ERRORS, ERROR, CONTENT_TIME_MODE_CHANGED, INIT_UNKNWON_ERROR, INIT_UNSUPPORT_ERROR, DESTROY, PLAYER_PLAY, NETWORK_UNSTABLED, PLAYER_WEBRTC_NETWORK_SLOW, PLAYER_WEBRTC_UNEXPECTED_DISCONNECT, PLAYER_WEBRTC_SET_LOCAL_DESC_ERROR,
-    PLAYER_FILE_ERROR, PROVIDER_DASH, PROVIDER_HLS, PROVIDER_WEBRTC, PROVIDER_HTML5, PROVIDER_RTMP, ALL_PLAYLIST_ENDED} from "api/constants";
-import {version} from 'version';
-import {ApiRtmpExpansion} from 'api/ApiExpansions';
-import {analUserAgent} from "utils/browser";
-import LA$ from 'utils/likeA$';
+    PLAYER_FILE_ERROR, PROVIDER_DASH, PROVIDER_HLS, PROVIDER_WEBRTC, PROVIDER_HTML5, PROVIDER_RTMP, ALL_PLAYLIST_ENDED} from "./constants";
+import {version} from '../version';
+import {ApiRtmpExpansion} from './ApiExpansions';
+import {analUserAgent} from "../utils/browser";
+import LA$ from '../utils/likeA$';
 
 /**
  * @brief   This object connects UI to the provider.

@@ -1,4 +1,4 @@
-import _ from 'utils/underscore';
+import _ from '../utils/underscore';
 
 /**
  * @brief   This executes the input commands at a specific point in time.

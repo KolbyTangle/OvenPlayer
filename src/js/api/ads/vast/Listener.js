@@ -36,8 +36,8 @@ import {
     PROVIDER_WEBRTC,
     PROVIDER_DASH,
     PROVIDER_HLS
-} from "api/constants";
-import LA$ from "utils/likeA$.js";
+} from "../../constants";
+import LA$ from "../../../utils/likeA$.js";
 
 const Listener = function(elAdVideo, vastTracker, provider, adsSpec, adButton, textView, OnAdError){
     const lowLevelEvents = {};

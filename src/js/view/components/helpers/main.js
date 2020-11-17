@@ -1,13 +1,13 @@
 /**
  * Created by hoho on 2018. 7. 24..
  */
-import OvenTemplate from "view/engine/OvenTemplate";
-import BigButton from "view/components/helpers/bigButton";
-import MessageBox from "view/components/helpers/messageBox";
-import CaptionViewer from "view/components/helpers/captionViewer";
-import Thumbnail from "view/components/helpers/thumbnail";
-import WaterMark from "view/components/helpers/waterMark";
-import Spinner from "view/components/helpers/spinner";
+import OvenTemplate from "../../engine/OvenTemplate";
+import BigButton from "../../components/helpers/bigButton";
+import MessageBox from "../../components/helpers/messageBox";
+import CaptionViewer from "../../components/helpers/captionViewer";
+import Thumbnail from "../../components/helpers/thumbnail";
+import WaterMark from "../../components/helpers/waterMark";
+import Spinner from "../../components/helpers/spinner";
 import {
     READY,
     ERROR,
@@ -31,7 +31,7 @@ import {
     CONTENT_LEVEL_CHANGED,
     NETWORK_UNSTABLED,
     UI_ICONS
-} from "api/constants";
+} from "../../../api/constants";
 
 const Helpers = function($container, api){
     let firstRun = false;

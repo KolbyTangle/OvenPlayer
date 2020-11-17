@@ -1,13 +1,13 @@
 /**
  * Created by hoho on 2018. 7. 24..
  */
-import OvenTemplate from 'view/engine/OvenTemplate';
+import OvenTemplate from '../../engine/OvenTemplate';
 import {
     STATE_IDLE,
     STATE_PLAYING,
     STATE_COMPLETE,
     STATE_PAUSED
-} from "api/constants";
+} from "../../../api/constants";
 import {STATE_ERROR} from "../../../api/constants";
 
 const BigButton = function($container, api, playerState){

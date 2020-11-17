@@ -1,11 +1,11 @@
 /**
  * Created by hoho on 2018. 6. 27..
  */
-import Ima from "api/ads/ima/Ad";
-import Vast from "api/ads/vast/Ad";
-import EventEmitter from "api/EventEmitter";
-import EventsListener from "api/provider/html5/Listener";
-import {extractVideoElement, pickCurrentSource} from "api/provider/utils";
+import Ima from "../../ads/ima/Ad";
+import Vast from "../../ads/vast/Ad";
+import EventEmitter from "../../EventEmitter";
+import EventsListener from "../../provider/html5/Listener";
+import {extractVideoElement, pickCurrentSource} from "../../provider/utils";
 import {
     WARN_MSG_MUTEDPLAY,
     UI_ICONS, PLAYER_WARNING,
@@ -14,7 +14,7 @@ import {
     CONTENT_TIME, CONTENT_CAPTION_CUE_CHANGED, CONTENT_SOURCE_CHANGED,
     AD_CLIENT_GOOGLEIMA, AD_CLIENT_VAST,
     PLAYBACK_RATE_CHANGED, CONTENT_MUTE, PROVIDER_HTML5, PROVIDER_WEBRTC, PROVIDER_DASH, PROVIDER_HLS
-} from "api/constants";
+} from "../../constants";
 
 /**
  * @brief   Core For Html5 Video.

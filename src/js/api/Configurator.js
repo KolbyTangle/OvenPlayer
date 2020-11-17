@@ -1,8 +1,8 @@
-import _ from "utils/underscore";
+import _ from "../utils/underscore";
 
 import {
     CONTENT_TIME_MODE_CHANGED, SYSTEM_TEXT
-} from "api/constants";
+} from "./constants";
 
 /**
  * @brief   This initializes the input options.

@@ -1,8 +1,8 @@
 import OvenPlayerSDK, {checkAndGetContainerElement} from './ovenplayer.sdk'
 import View from './view/view';
 import dom from './utils/polyfills/dom.js';
-import 'babel-polyfill';
-import {getScriptPath} from 'utils/webpack';
+//import 'babel-polyfill';
+import {getScriptPath} from './utils/webpack';
 
 
 __webpack_public_path__ = getScriptPath('ovenplayer.js');

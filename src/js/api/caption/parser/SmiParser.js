@@ -1,4 +1,4 @@
-import {getBrowserLanguage} from "utils/browser";
+import {getBrowserLanguage} from "../../../utils/browser";
 /*
  *  sami-parser
  *  The MIT License (MIT)

@@ -1,4 +1,4 @@
-import {extractExtension} from "utils/strings";
+import {extractExtension} from "./strings";
 
 export const isRtmp = function (file, type) {
     if(file){

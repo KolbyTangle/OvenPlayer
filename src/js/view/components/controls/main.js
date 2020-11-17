@@ -1,16 +1,16 @@
 /**
  * Created by hoho on 2018. 7. 20..
  */
-import OvenTemplate from "view/engine/OvenTemplate";
-import PlayButton from "view/components/controls/playButton";
-import SettingButton from "view/components/controls/settingButton";
-import FrameButtons from "view/components/controls/frameButtons";
-import VolumeButton from "view/components/controls/volumeButton";
-import ProgressBar from "view/components/controls/progressBar";
-import PlaylistPanel from "view/components/controls/playlistPanel";
-import LA$ from 'utils/likeA$';
-import TimeDisplay from "view/components/controls/timeDisplay";
-import FullScreenButton from "view/components/controls/fullScreenButton";
+import OvenTemplate from "../../engine/OvenTemplate";
+import PlayButton from "../../components/controls/playButton";
+import SettingButton from "../../components/controls/settingButton";
+import FrameButtons from "../../components/controls/frameButtons";
+import VolumeButton from "../../components/controls/volumeButton";
+import ProgressBar from "../../components/controls/progressBar";
+import PlaylistPanel from "../../components/controls/playlistPanel";
+import LA$ from '../../../utils/likeA$';
+import TimeDisplay from "../../components/controls/timeDisplay";
+import FullScreenButton from "../../components/controls/fullScreenButton";
 
 import {
     READY,
@@ -25,7 +25,7 @@ import {
     OME_P2P_MODE,
     PROVIDER_RTMP,
     ERROR
-} from "api/constants";
+} from "../../../api/constants";
 import {PLAYER_WEBRTC_WS_ERROR} from "../../../api/constants";
 
 const Controls = function ($container, api) {

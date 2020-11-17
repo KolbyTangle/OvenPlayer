@@ -1,8 +1,10 @@
 /**
  * Created by hoho on 2018. 7. 4..
  */
-import SrtParser from "api/caption/parser/SrtParser";
-import VTTCue from "utils/captions/vttCue";
+import SrtParser from "./parser/SrtParser";
+import SmiParser from "./parser/SmiParser";
+import VttParser from "./parser/VttParser";
+import VTTCue from "../../utils/captions/vttCue";
 //import Request from "utils/downloader";
 
 const Loader = function(){
@@ -76,18 +78,18 @@ const Loader = function(){
     return that;
 };
 function loadRequestDownloder(){
-    return require.ensure(['utils/downloader'], function (require) {
-        return require('utils/downloader').default;
+    return require.ensure(['../../utils/downloader'], function (require) {
+        return require('../../utils/downloader').default;
     }, function(err){console.log(err);}, 'downloader');
 };
 function loadVttParser() {
-    return require.ensure(['api/caption/parser/VttParser'], function (require) {
-        return require('api/caption/parser/VttParser').default;
+    return require.ensure(['./parser/VttParser'], function (require) {
+        return require('./parser/VttParser').default;
     }, function(err){console.log(err);}, 'vttparser');
 }
 function loadSmiParser() {
-    return require.ensure(['api/caption/parser/SmiParser'], function (require) {
-        return require('api/caption/parser/SmiParser').default;
+    return require.ensure(['./parser/SmiParser'], function (require) {
+        return require('./parser/SmiParser').default;
     }, function(err){console.log(err);}, 'smiparser');
 }
 export default Loader;

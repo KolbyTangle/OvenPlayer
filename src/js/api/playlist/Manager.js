@@ -1,8 +1,8 @@
-import _ from "utils/underscore";
-import {isRtmp, isWebRTC, isDash } from "utils/validator";
+import _ from "../../utils/underscore";
+import {isRtmp, isWebRTC, isDash } from "../../utils/validator";
 import {extractExtension ,trim} from "../../utils/strings";
 import SupportChecker from "../SupportChecker";
-import {PLAYLIST_CHANGED} from "api/constants";
+import {PLAYLIST_CHANGED} from "../constants";
 
 /**
  * @brief   This manages Playlist or Sources.

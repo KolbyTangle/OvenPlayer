@@ -1,8 +1,8 @@
 /**
  * Created by hoho on 2018. 8. 23..
  */
-import {STATE_IDLE, PROVIDER_RTMP} from "api/constants";
-import Provider from "api/provider/flash/Provider";
+import {STATE_IDLE, PROVIDER_RTMP} from "../../../constants";
+import Provider from "../Provider";
 /**
  * @brief   rtmp provider
  * @param   element video element.

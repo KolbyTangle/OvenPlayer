@@ -1,8 +1,8 @@
 /**
  * Created by hoho on 2018. 8. 1..
  */
-import OvenTemplate from 'view/engine/OvenTemplate';
-import LA$ from 'utils/likeA$';
+import OvenTemplate from '../../engine/OvenTemplate';
+import LA$ from '../../../utils/likeA$';
 
 const ContextPanel = function($container, api, position){
     const $root = LA$("#"+api.getContainerId());

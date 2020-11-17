@@ -1,7 +1,7 @@
 /**
  * Created by hoho on 2018. 7. 24..
  */
-import OvenTemplate from 'view/engine/OvenTemplate';
+import OvenTemplate from '../../engine/OvenTemplate';
 import {
     STATE_IDLE,
     STATE_PLAYING,
@@ -9,8 +9,8 @@ import {
     STATE_PAUSED,
     CONTENT_CAPTION_CHANGED,
     CONTENT_CAPTION_CUE_CHANGED
-} from "api/constants";
-import LA$ from 'utils/likeA$';
+} from "../../../api/constants";
+import LA$ from '../../../utils/likeA$';
 
 
 const CaptionViewer = function($container, api, playerState){

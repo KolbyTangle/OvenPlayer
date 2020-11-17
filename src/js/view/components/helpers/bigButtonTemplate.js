@@ -6,7 +6,7 @@ import {
     STATE_COMPLETE,
     STATE_PAUSED,
     STATE_ERROR
-} from "api/constants";
+} from "../../../api/constants";
 
 
 export default (uiText, playerState) => {

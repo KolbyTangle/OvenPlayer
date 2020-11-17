@@ -1,8 +1,8 @@
 /**
  * Created by hoho on 2018. 7. 24..
  */
-import OvenTemplate from "view/engine/OvenTemplate";
-import LA$ from 'utils/likeA$';
+import OvenTemplate from "../../engine/OvenTemplate";
+import LA$ from '../../../utils/likeA$';
 import {
     ERROR,
     STATE_IDLE,
@@ -13,7 +13,7 @@ import {
     STATE_PAUSED,
     STATE_ERROR,
     PLAYER_STATE
-} from "api/constants";
+} from "../../../api/constants";
 
 const FrameButtons = function ($container, api) {
     const onRendered = function($current, template){

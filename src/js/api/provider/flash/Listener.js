@@ -28,7 +28,7 @@ import {
     PROVIDER_WEBRTC,
     PROVIDER_DASH,
     PROVIDER_HLS
-} from "api/constants";
+} from "../../constants";
 
 const Listener = function(elFlash, provider, videoEndedCallback){
     let that = {};

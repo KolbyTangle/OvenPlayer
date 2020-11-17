@@ -1,19 +1,19 @@
 /**
  * Created by hoho on 2018. 7. 26..
  */
-import OvenTemplate from 'view/engine/OvenTemplate';
-import PanelManager from "view/global/PanelManager";
-import LA$ from 'utils/likeA$';
-import _ from 'utils/underscore';
-import sizeHumanizer from "utils/sizeHumanizer";
-import SpeedPanel from "view/components/controls/settingPanel/speedPanel";
-import SourcePanel from "view/components/controls/settingPanel/sourcePanel";
-import QualityPanel from "view/components/controls/settingPanel/qualityPanel";
-import CaptionPanel from "view/components/controls/settingPanel/captionPanel";
-import TimeDisplayPanel from "view/components/controls/settingPanel/timeDisplayPanel";
+import OvenTemplate from '../../../engine/OvenTemplate';
+import PanelManager from "../../../global/PanelManager";
+import LA$ from '../../../../utils/likeA$';
+import _ from '../../../../utils/underscore';
+import sizeHumanizer from "../../../../utils/sizeHumanizer";
+import SpeedPanel from "../../../components/controls/settingPanel/speedPanel";
+import SourcePanel from "../../../components/controls/settingPanel/sourcePanel";
+import QualityPanel from "../../../components/controls/settingPanel/qualityPanel";
+import CaptionPanel from "../../../components/controls/settingPanel/captionPanel";
+import TimeDisplayPanel from "../../../components/controls/settingPanel/timeDisplayPanel";
 import {
     CONTENT_LEVEL_CHANGED, PROVIDER_RTMP
-} from "api/constants";
+} from "../../../../api/constants";
 
 let PANEL_TITLE = {
     "speed" : "Speed",

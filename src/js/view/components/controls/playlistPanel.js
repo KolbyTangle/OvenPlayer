@@ -1,14 +1,14 @@
 /**
  * Created by hoho on 06/03/2019.
  */
-import OvenTemplate from "view/engine/OvenTemplate";
-import {naturalHms} from "utils/strings"
-import {playlistItemTemplate} from "view/components/controls/playlistPanelTemplate";
-import LA$ from "utils/likeA$";
+import OvenTemplate from "../../engine/OvenTemplate";
+import {naturalHms} from "../../../utils/strings"
+import {playlistItemTemplate} from "../../components/controls/playlistPanelTemplate";
+import LA$ from "../../../utils/likeA$";
 import {
     PLAYER_RESIZED,
     PLAYLIST_CHANGED
-} from "api/constants";
+} from "../../../api/constants";
 
 const PlaylistPanel = function($container, api){
     const $root = LA$("#"+api.getContainerId());

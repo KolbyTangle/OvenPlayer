@@ -1,8 +1,8 @@
 /**
  * Created by hoho on 2018. 7. 26..
  */
-import OvenTemplate from "view/engine/OvenTemplate";
-import LA$ from "utils/likeA$";
+import OvenTemplate from "../../engine/OvenTemplate";
+import LA$ from "../../../utils/likeA$";
 import {
     AD_CHANGED,
     STATE_AD_COMPLETE,
@@ -11,7 +11,7 @@ import {
     STATE_AD_PAUSED,
     PLAYER_FULLSCREEN_CHANGED,
     PLAYER_FULLSCREEN_REQUEST
-} from "api/constants";
+} from "../../../api/constants";
 
 
 

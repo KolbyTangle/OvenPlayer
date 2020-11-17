@@ -1,12 +1,12 @@
 /**
  * Created by hoho on 2019. 5. 17..
  */
-import OvenTemplate from "view/engine/OvenTemplate";
-import Panels from "view/components/controls/settingPanel/main";
-import PanelManager from "view/global/PanelManager";
+import OvenTemplate from "../../engine/OvenTemplate";
+import Panels from "../../components/controls/settingPanel/main";
+import PanelManager from "../../global/PanelManager";
 import {
     PROVIDER_RTMP
-} from "api/constants";
+} from "../../../api/constants";
 
 let PANEL_TITLE = {
     "speed" : "Speed",

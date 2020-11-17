@@ -1,10 +1,10 @@
 /**
  * Created by hoho on 08/04/2019.
  */
-import AdsEventsListener from "api/ads/ima/Listener";
-import {TEMP_VIDEO_URL} from "api/ads/utils";
-import LA$ from "utils/likeA$.js";
-import {errorTrigger} from "api/provider/utils";
+import AdsEventsListener from "./Listener";
+import {TEMP_VIDEO_URL} from "../utils";
+import LA$ from "../../../utils/likeA$.js";
+import {errorTrigger} from "../../provider/utils";
 import {
     ERROR,
     CONTENT_VOLUME,
@@ -17,7 +17,7 @@ import {
     STATE_AD_LOADING,
     PROVIDER_DASH,
     UI_ICONS
-} from "api/constants";
+} from "../../constants";
 
 const Ad = function(elVideo, provider, playerConfig, adTagUrl, errorCallback){
     //Todo : move createAdContainer to MediaManager

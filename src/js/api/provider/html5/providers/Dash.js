@@ -1,9 +1,9 @@
 /**
  * Created by hoho on 2018. 6. 14..
  */
-import Provider from "api/provider/html5/Provider";
-import {errorTrigger} from "api/provider/utils";
-import sizeHumanizer from "utils/sizeHumanizer";
+import Provider from "../Provider";
+import {errorTrigger} from "../../utils";
+import sizeHumanizer from "../../../../utils/sizeHumanizer";
 import {
     STATE_IDLE,
     STATE_PLAYING,
@@ -15,8 +15,8 @@ import {
     PLAYER_UNKNWON_NETWORK_ERROR,
     CONTENT_LEVEL_CHANGED,
     PROVIDER_DASH
-} from "api/constants";
-import _ from "utils/underscore";
+} from "../../../constants";
+import _ from "../../../../utils/underscore";
 import {STATE_LOADING} from "../../../constants";
 
 /**

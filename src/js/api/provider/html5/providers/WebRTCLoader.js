@@ -1,6 +1,6 @@
-import adapter from 'utils/adapter';
-import _ from "utils/underscore";
-import {analUserAgent} from "utils/browser";
+import adapter from '../../../../utils/adapter';
+import _ from "../../../../utils/underscore";
+import {analUserAgent} from "../../../../utils/browser";
 import {
     ERRORS,
     PLAYER_WEBRTC_WS_ERROR,
@@ -12,7 +12,7 @@ import {
     PLAYER_WEBRTC_NETWORK_SLOW,
     PLAYER_WEBRTC_UNEXPECTED_DISCONNECT,
     OME_P2P_MODE
-} from "api/constants";
+} from "../../../constants";
 
 
 const WebRTCLoader = function (provider, webSocketUrl, loadCallback, errorTrigger, playerConfig) {

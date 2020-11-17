@@ -1,7 +1,7 @@
 /**
  * Created by hoho on 2018. 5. 29..
  */
-import { hmsToSecond, trim } from "utils/strings"
+import { hmsToSecond, trim } from "../../../utils/strings"
 
 function _entry(data) {
     var entry = {};

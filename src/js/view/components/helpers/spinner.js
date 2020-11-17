@@ -1,7 +1,7 @@
 /**
  * Created by hoho on 2018. 7. 25..
  */
-import OvenTemplate from 'view/engine/OvenTemplate';
+import OvenTemplate from '../../engine/OvenTemplate';
 
 const Spinner = function($container, api){
     let $spinner = "";

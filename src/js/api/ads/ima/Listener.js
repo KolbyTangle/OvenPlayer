@@ -37,7 +37,7 @@ import {
     PROVIDER_WEBRTC,
     PROVIDER_DASH,
     PROVIDER_HLS
-} from "api/constants";
+} from "../../constants";
 
 const Listener = function(adsManager, provider, adsSpec, OnAdError){
     let that = {};

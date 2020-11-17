@@ -1,11 +1,11 @@
 /**
  * Created by hoho on 2018. 8. 23..
  */
-import Ima from "api/ads/ima/Ad";
-import Vast from "api/ads/vast/Ad";
-import EventEmitter from "api/EventEmitter";
-import EventsListener from "api/provider/flash/Listener";
-import {extractVideoElement, pickCurrentSource} from "api/provider/utils";
+import Ima from "../../ads/ima/Ad";
+import Vast from "../../ads/vast/Ad";
+import EventEmitter from "../../EventEmitter";
+import EventsListener from "./Listener";
+import {extractVideoElement, pickCurrentSource} from "../utils";
 import {
     ERRORS, INIT_RTMP_SETUP_ERROR,
     STATE_IDLE, STATE_PLAYING, STATE_PAUSED, STATE_COMPLETE, STATE_ERROR,
@@ -13,7 +13,7 @@ import {
     CONTENT_SOURCE_CHANGED, CONTENT_LEVEL_CHANGED, CONTENT_TIME, CONTENT_CAPTION_CUE_CHANGED,
     AD_CLIENT_GOOGLEIMA, AD_CLIENT_VAST,
     PLAYBACK_RATE_CHANGED, CONTENT_MUTE, PROVIDER_HTML5, PROVIDER_WEBRTC, PROVIDER_DASH, PROVIDER_HLS
-} from "api/constants";
+} from "../../constants";
 
 /**
  * @brief   Core For Flash Video.

@@ -1,7 +1,7 @@
 /**
  * Created by hoho on 2018. 7. 19..
  */
-import OvenTemplate from 'view/engine/OvenTemplate';
+import OvenTemplate from '../engine/OvenTemplate';
 
 const TextView = function($container, api, text){
     const onRendered = function($current, template){

@@ -1,8 +1,8 @@
-import SupportChecker from "api/SupportChecker";
-import {ApiRtmpExpansion} from 'api/ApiExpansions';
+import SupportChecker from "../SupportChecker";
+import {ApiRtmpExpansion} from '../ApiExpansions';
 import {
     PROVIDER_HTML5, PROVIDER_WEBRTC, PROVIDER_DASH, PROVIDER_HLS, PROVIDER_RTMP, ERRORS, INIT_UNSUPPORT_ERROR
-} from "api/constants";
+} from "../constants";
 
 /**
  * @brief   This manages provider.
@@ -25,8 +25,8 @@ const Controller = function () {
 
     const ProviderLoader = {
         html5: function () {
-            return require.ensure(['api/provider/html5/providers/Html5'], function (require) {
-                    const provider = require('api/provider/html5/providers/Html5').default;
+            return require.ensure(['../provider/html5/providers/Html5'], function (require) {
+                    const provider = require('../provider/html5/providers/Html5').default;
                     registeProvider(PROVIDER_HTML5, provider);
                     return {name: PROVIDER_HTML5, provider: provider};
                 }, function (err) {
@@ -35,8 +35,8 @@ const Controller = function () {
             );
         },
         webrtc: function () {
-            return require.ensure(['api/provider/html5/providers/WebRTC'], function (require) {
-                    const provider = require('api/provider/html5/providers/WebRTC').default;
+            return require.ensure(['../provider/html5/providers/WebRTC'], function (require) {
+                    const provider = require('../provider/html5/providers/WebRTC').default;
                     registeProvider(PROVIDER_WEBRTC, provider);
                     return {name: PROVIDER_WEBRTC, provider: provider};
                 }, function (err) {
@@ -45,8 +45,8 @@ const Controller = function () {
             );
         },
         dash: function () {
-            return require.ensure(['api/provider/html5/providers/Dash'], function (require) {
-                    const provider = require('api/provider/html5/providers/Dash').default;
+            return require.ensure(['../provider/html5/providers/Dash'], function (require) {
+                    const provider = require('../provider/html5/providers/Dash').default;
                     registeProvider(PROVIDER_DASH, provider);
                     return {name: PROVIDER_DASH, provider: provider};
                 }, function (err) {
@@ -55,8 +55,8 @@ const Controller = function () {
             );
         },
         hls: function () {
-            return require.ensure(['api/provider/html5/providers/Hls'], function (require) {
-                    const provider = require('api/provider/html5/providers/Hls').default;
+            return require.ensure(['../provider/html5/providers/Hls'], function (require) {
+                    const provider = require('../provider/html5/providers/Hls').default;
                     registeProvider(PROVIDER_HLS, provider);
                     return {name: PROVIDER_HLS, provider: provider};
                 }, function (err) {
@@ -65,8 +65,8 @@ const Controller = function () {
             );
         },
         rtmp: function () {
-            return require.ensure(['api/provider/flash/providers/Rtmp'], function (require) {
-                    const provider = require('api/provider/flash/providers/Rtmp').default;
+            return require.ensure(['../provider/flash/providers/Rtmp'], function (require) {
+                    const provider = require('../provider/flash/providers/Rtmp').default;
                     registeProvider(PROVIDER_RTMP, provider);
                     return {name: PROVIDER_RTMP, provider: provider};
                 }, function (err) {

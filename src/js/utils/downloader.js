@@ -12,7 +12,7 @@ import http from "http";
 import url from "url";
 import path from "path";
 import querystring from "querystring";
-import _ from "utils/underscore";
+import _ from "./underscore";
 
 /**
  * @description

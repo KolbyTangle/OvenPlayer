@@ -1,15 +1,15 @@
 /**
  * Created by hoho on 2018. 6. 7..
  */
-import Provider from "api/provider/html5/Provider";
-import {errorTrigger} from "api/provider/utils";
+import Provider from "../Provider";
+import {errorTrigger} from "../../utils";
 import {
     PROVIDER_HLS,
     PLAYER_STATE, STATE_IDLE, STATE_LOADING,
     INIT_DASH_UNSUPPORT, ERRORS,
     INIT_HLSJS_NOTFOUND
-} from "api/constants";
-import _ from "utils/underscore";
+} from "../../../constants";
+import _ from "../../../../utils/underscore";
 import {
     PLAYER_UNKNWON_ERROR,
     PLAYER_UNKNWON_NETWORK_ERROR,

@@ -26,8 +26,8 @@ import {
     PROVIDER_WEBRTC,
     PROVIDER_DASH,
     PROVIDER_HLS
-} from "api/constants";
-import {extractVideoElement, errorTrigger} from "api/provider/utils";
+} from "../../constants";
+import {extractVideoElement, errorTrigger} from "../../provider/utils";
 
 /**
  * @brief   Trigger on various video events.

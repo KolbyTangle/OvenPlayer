@@ -1,9 +1,9 @@
 /**
  * Created by hoho on 2018. 7. 26..
  */
-import OvenTemplate from 'view/engine/OvenTemplate';
-import PanelManager from "view/global/PanelManager";
-import LA$ from 'utils/likeA$';
+import OvenTemplate from '../../../engine/OvenTemplate';
+import PanelManager from "../../../global/PanelManager";
+import LA$ from '../../../../utils/likeA$';
 
 
 const SpeedPanel = function($container, api, data){

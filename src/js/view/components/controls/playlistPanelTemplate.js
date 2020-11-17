@@ -1,4 +1,4 @@
-import {naturalHms} from "utils/strings"
+import {naturalHms} from "../../../utils/strings"
 
 export default (uiText, playlist) => {
     return (`<div class="op-playlist" tabindex="0">` +
