@@ -1,8 +1,8 @@
 /**
  * Created by hoho on 2018. 6. 27..
  */
-import Ima from "../../ads/ima/Ad";
-import Vast from "../../ads/vast/Ad";
+import Ima from "../../sads/ima/Sad";
+import Vast from "../../sads/vast/Sad";
 import EventEmitter from "../../EventEmitter";
 import EventsListener from "../../provider/html5/Listener";
 import {extractVideoElement, pickCurrentSource} from "../../provider/utils";

@@ -1,11 +1,11 @@
 import API from './api/Api';
 import {isWebRTC} from './utils/validator';
 import _ from './utils/underscore';
-import La$ from './utils/likeA$';
-import {getScriptPath} from './utils/webpack';
+//import La$ from './utils/likeA$';
+//import {getScriptPath} from './utils/webpack';
 
 
-__webpack_public_path__ = getScriptPath('ovenplayer.sdk.js');
+//__webpack_public_path__ = getScriptPath('ovenplayer.sdk.js');
 
 /**
  * Main OvenPlayerSDK object
