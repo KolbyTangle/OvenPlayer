@@ -70,6 +70,10 @@ const SupportChecker = function(){
         {
             name: 'webrtc',
             checkSupport: function (source) {
+
+                const file = source.file;
+                const type = source.type;
+
                 const video = function(){
                     return document.createElement('video')
                 }();
@@ -79,9 +83,6 @@ const SupportChecker = function(){
                 if (isRtmp(file, type)) {
                     return false;
                 }
-
-                const file = source.file;
-                const type = source.type;
 
                 if(isWebRTC(file, type)){
                     return true;
@@ -93,9 +94,10 @@ const SupportChecker = function(){
         {
             name: 'dash',
             checkSupport: function (source) {
-                const file = source.file;
 
+                const file = source.file;
                 const type = source.type;
+                
                 if (isRtmp(file, type)) {
                     return false;
                 }
